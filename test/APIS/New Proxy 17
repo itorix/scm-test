@@ -1,0 +1,48 @@
+{
+  "id" : "662647e2b1d4553b2020e976",
+  "cts" : 1713784802959,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1714129293545,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "662647e2b1d4553b2020e975",
+  "revision" : 1,
+  "name" : "New Proxy 17",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : false,
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "0e8b2b32-e5b0-4dcf-a336-1ebd41e8dc4a"
+  } ],
+  "vertexHashMap" : {
+    "0e8b2b32-e5b0-4dcf-a336-1ebd41e8dc4a" : {
+      "vertexId" : "0e8b2b32-e5b0-4dcf-a336-1ebd41e8dc4a",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ]
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1713784802959,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "deployed" : false
+}
