@@ -1,8 +1,9 @@
 {
+  "id" : "6630c0745eaf124dd9570b1c",
   "cts" : 1714471027426,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1714471027426,
+  "mts" : 1714635472248,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6630c0735eaf124dd9570b1b",
@@ -16,6 +17,9 @@
   "locked" : false,
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "f38dd4aa-b9bc-4f5a-a604-ba0b8b19780b"
+  }, {
+    "source" : "f38dd4aa-b9bc-4f5a-a604-ba0b8b19780b",
     "target" : "6619c438-6c75-46e9-9325-27f611d6c7c7"
   } ],
   "vertexHashMap" : {
@@ -35,6 +39,33 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ]
+    },
+    "f38dd4aa-b9bc-4f5a-a604-ba0b8b19780b" : {
+      "vertexId" : "f38dd4aa-b9bc-4f5a-a604-ba0b8b19780b",
+      "vertexType" : "TARGET",
+      "target" : {
+        "name" : "addPrimaryTransaction",
+        "description" : "Add Primary Transaction",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "path" : "/v1/acmebank/transactions/primary-transaction",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false
+      }
     }
   },
   "statusHistory" : [ {
@@ -42,6 +73,12 @@
     "cts" : 1714471027426,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "8abf0b41f2af1a2b240128543341b0c23685012e",
+    "timeStamp" : 1714471027426,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "deployed" : false
