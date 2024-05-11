@@ -1,0 +1,182 @@
+{
+  "cts" : 1715426187133,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1715426187133,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "663f538b49c8c81027bea631",
+  "revision" : 1,
+  "name" : "for loop",
+  "description" : "for loop",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/forloop",
+  "pathArray" : [ "forloop" ],
+  "environmentId" : "65aa1e5c2c3c9e6f117c09c3",
+  "revisionStatus" : "DRAFT",
+  "locked" : false,
+  "edgeSet" : [ {
+    "source" : "v3",
+    "target" : "v4"
+  }, {
+    "source" : "v1",
+    "target" : "v2"
+  }, {
+    "source" : "v2",
+    "target" : "v3"
+  } ],
+  "vertexHashMap" : {
+    "v10" : {
+      "vertexId" : "v10",
+      "vertexType" : "TARGET",
+      "name" : "swagger info",
+      "target" : {
+        "name" : "swagger info",
+        "description" : "swagger info",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "dev-api.apiwiz.io",
+          "path" : "/itorix/v1/swaggers/info",
+          "headerParams" : [ {
+            "name" : "jsessionid",
+            "description" : "jsessionid",
+            "value" : "6613871e799b5c514be11853"
+          }, {
+            "name" : "Content-Type",
+            "description" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ {
+            "name" : "id",
+            "description" : "id",
+            "value" : "{{swaggerId}}"
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false
+      }
+    },
+    "v11" : {
+      "vertexId" : "v10",
+      "vertexType" : "TARGET",
+      "name" : "Pet store target",
+      "target" : {
+        "name" : "petstore request",
+        "description" : "this a petstore request",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "petstore.swagger.io",
+          "path" : "/v2/pet/findByStatus",
+          "queryParams" : [ {
+            "name" : "status",
+            "description" : "status",
+            "value" : "available"
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "proxy"
+    },
+    "v2" : {
+      "vertexId" : "v2",
+      "vertexType" : "TARGET",
+      "name" : "swagger pagination",
+      "target" : {
+        "name" : "swagger pagination",
+        "description" : "swagger pagination",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "dev-api.apiwiz.io",
+          "path" : "/itorix/v2/swaggers/history",
+          "headerParams" : [ {
+            "name" : "jsessionid",
+            "description" : "jsessionid",
+            "value" : "6613871e799b5c514be11853"
+          }, {
+            "name" : "Content-Type",
+            "description" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ {
+            "name" : "offset",
+            "description" : "offset",
+            "value" : "1"
+          }, {
+            "name" : "pageSize",
+            "description" : "pageSize",
+            "value" : "10"
+          }, {
+            "name" : "sortbymodifieddate",
+            "description" : "sortbymodifieddate",
+            "value" : "desc"
+          } ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "swaggerIds",
+            "reference" : "body",
+            "value" : "data",
+            "active" : false,
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false
+      }
+    },
+    "v3" : {
+      "vertexId" : "v8",
+      "vertexType" : "LOOP",
+      "name" : "for loop",
+      "loopData" : {
+        "listVariableSource" : "swaggerIds",
+        "variables" : [ {
+          "name" : "swaggerId",
+          "value" : "id",
+          "active" : true,
+          "hide" : false
+        } ],
+        "listType" : "json",
+        "startingVertex" : [ "v10" ],
+        "loopVertexes" : [ "v10" ]
+      }
+    },
+    "v4" : {
+      "vertexId" : "v3",
+      "vertexType" : "STOP",
+      "name" : "response",
+      "proxyResponse" : {
+        "statusCode" : 202,
+        "headers" : {
+          "x-agent" : "apibuiler",
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "for loop",
+          "type" : "json"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1715426187133,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "deployed" : false
+}
