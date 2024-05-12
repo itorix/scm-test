@@ -3,7 +3,7 @@
   "cts" : 1713271508019,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715514651646,
+  "mts" : 1715537258940,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "661e72d433ad746ee135f0be",
@@ -11,7 +11,7 @@
   "name" : "change-log testing",
   "description" : "desc",
   "apiType" : "RESTAPI",
-  "apiMethod" : "GET",
+  "apiMethod" : "POST",
   "path" : "https://google.com/",
   "pathArray" : [ "https:", "google.com" ],
   "revisionStatus" : "DRAFT",
@@ -49,6 +49,11 @@
   "changeLogs" : [ {
     "commitId" : "9b1e05e661987ec4bda992d4327221c54705f7c0",
     "timeStamp" : 1714127998154,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "d27498554dd7c75ca718fc0ef8a5a1846a7629d3",
+    "timeStamp" : 1715514651646,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
