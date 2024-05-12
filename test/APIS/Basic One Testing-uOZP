@@ -1,0 +1,153 @@
+{
+  "cts" : 1715522943532,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1715522943532,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "6640cd7fa519a3132f36f70d",
+  "revision" : 1,
+  "name" : "Basic One Testing-uOZP",
+  "description" : "desc updated",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "https://petstore.swagger.io/v2/pet/findByStatus",
+  "pathArray" : [ "https:", "petstore.swagger.io", "v2", "pet", "findByStatus" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : false,
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "6946b40f-26f6-4d1b-8a14-e8b97c596469"
+  }, {
+    "source" : "6946b40f-26f6-4d1b-8a14-e8b97c596469",
+    "target" : "b423da31-1f4a-4f43-8906-cafa36efe300"
+  } ],
+  "vertexHashMap" : {
+    "6946b40f-26f6-4d1b-8a14-e8b97c596469" : {
+      "vertexId" : "6946b40f-26f6-4d1b-8a14-e8b97c596469",
+      "vertexType" : "TARGET",
+      "name" : "working",
+      "target" : {
+        "name" : "working",
+        "description" : "Achievement swagger",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "path" : "https://petstore.swagger.io/v2/pet/findByStatus?status=available",
+          "headerParams" : [ {
+            "name" : "",
+            "value" : ""
+          } ],
+          "queryParams" : [ {
+            "name" : "",
+            "value" : ""
+          } ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "",
+            "reference" : "headers",
+            "value" : "",
+            "active" : false,
+            "source" : "headers",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0
+        }
+      }
+    },
+    "b423da31-1f4a-4f43-8906-cafa36efe300" : {
+      "vertexId" : "b423da31-1f4a-4f43-8906-cafa36efe300",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "proxyResponse" : {
+        "statusCode" : 202,
+        "headers" : {
+          "x-agent" : "apibuiler",
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "for loop",
+          "type" : "json"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "status",
+        "reference" : "query-params",
+        "value" : "availabe",
+        "active" : false,
+        "source" : "query-params",
+        "hide" : false
+      } ]
+    }
+  },
+  "changeLogs" : [ {
+    "commitId" : "224ab4237a22edcccd49c033bfdbb028a73fcb91",
+    "timeStamp" : 1714129786345,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "0db047da1dd2bac7aa67b86796d661dc030e480e",
+    "timeStamp" : 1715333166995,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "df5ff480dd1b6b2f65fe512bcdf0202d175d0520",
+    "timeStamp" : 1715333223120,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "4de01ce5dfa47f0e8fcdcaf44cce4fa67f2ed113",
+    "timeStamp" : 1715509080853,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "f11b8d27f2a43f425d01a7ccd690073bbcd3a5f5",
+    "timeStamp" : 1715509115127,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "b684bc8d90edc0201efddf0031641593bcba150d",
+    "timeStamp" : 1715509556311,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "6a90fd044c36114ce97f929147bf057fbb555d86",
+    "timeStamp" : 1715510415038,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "a9ced1cc53b2b05f19941ea54f3fc26819bba93f",
+    "timeStamp" : 1715510470282,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "3e2e3ff88b8d6efa0b29ed3b02e765481b3163ea",
+    "timeStamp" : 1715510517339,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "1868daf9789fedbbb76caf2b40658ec490069307",
+    "timeStamp" : 1715521041741,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  } ],
+  "enableTracing" : false,
+  "deployed" : false
+}
