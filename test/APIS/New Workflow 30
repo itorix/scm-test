@@ -1,8 +1,9 @@
 {
+  "id" : "664224ad4129fb34ca6d77ac",
   "cts" : 1715610795430,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715610795430,
+  "mts" : 1715611889132,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664224ab4129fb34ca6d77ab",
@@ -16,10 +17,64 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "34054d76-574e-4beb-94d6-0fcda3f5c81b",
     "target" : "365a94e5-0634-4cc5-ac2c-368903d948b3"
+  }, {
+    "source" : "v1",
+    "target" : "34054d76-574e-4beb-94d6-0fcda3f5c81b"
   } ],
   "vertexHashMap" : {
+    "34054d76-574e-4beb-94d6-0fcda3f5c81b" : {
+      "vertexId" : "34054d76-574e-4beb-94d6-0fcda3f5c81b",
+      "vertexType" : "TARGET",
+      "name" : "Dummy Json",
+      "target" : {
+        "name" : "Dummy Json",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "https://dummyjson.com",
+          "path" : "/products/1",
+          "headerParams" : [ {
+            "name" : "",
+            "value" : ""
+          } ],
+          "queryParams" : [ {
+            "name" : "",
+            "value" : ""
+          } ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "",
+            "reference" : "headers",
+            "value" : "",
+            "active" : false,
+            "source" : "headers",
+            "hide" : false
+          }, {
+            "name" : "$.id",
+            "reference" : "body",
+            "value" : "justid",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0
+        }
+      }
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -43,6 +98,12 @@
     "cts" : 1715610795430,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "36fed1a62bfab58d777d6ab6af8100af40ffc282",
+    "timeStamp" : 1715610795430,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "deployed" : false
