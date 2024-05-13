@@ -3,7 +3,7 @@
   "cts" : 1715610795430,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715615193756,
+  "mts" : 1715616139547,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664224ab4129fb34ca6d77ab",
@@ -17,13 +17,54 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
+    "source" : "34c0da5b-14ee-4725-9e9b-30530c768d98",
+    "target" : "365a94e5-0634-4cc5-ac2c-368903d948b3"
+  }, {
+    "source" : "34054d76-574e-4beb-94d6-0fcda3f5c81b",
+    "target" : "34c0da5b-14ee-4725-9e9b-30530c768d98"
+  }, {
     "source" : "v1",
     "target" : "34054d76-574e-4beb-94d6-0fcda3f5c81b"
   }, {
-    "source" : "34054d76-574e-4beb-94d6-0fcda3f5c81b",
-    "target" : "365a94e5-0634-4cc5-ac2c-368903d948b3"
+    "source" : "34c0da5b-14ee-4725-9e9b-30530c768d98",
+    "target" : "cb4da8ff-fa0d-493d-94dc-c32c5a82ba54"
+  }, {
+    "source" : "34c0da5b-14ee-4725-9e9b-30530c768d98",
+    "target" : "eb66500e-ccc1-4516-8642-1af83926218e"
   } ],
   "vertexHashMap" : {
+    "cb4da8ff-fa0d-493d-94dc-c32c5a82ba54" : {
+      "vertexId" : "cb4da8ff-fa0d-493d-94dc-c32c5a82ba54",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "proxyResponse" : {
+        "statusCode" : 0
+      }
+    },
+    "34c0da5b-14ee-4725-9e9b-30530c768d98" : {
+      "vertexId" : "34c0da5b-14ee-4725-9e9b-30530c768d98",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "365a94e5-0634-4cc5-ac2c-368903d948b3" ]
+      }, {
+        "condition" : "else-if",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "cb4da8ff-fa0d-493d-94dc-c32c5a82ba54" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "eb66500e-ccc1-4516-8642-1af83926218e" ]
+      } ]
+    },
     "34054d76-574e-4beb-94d6-0fcda3f5c81b" : {
       "vertexId" : "34054d76-574e-4beb-94d6-0fcda3f5c81b",
       "vertexType" : "TARGET",
@@ -91,6 +132,18 @@
           "data" : "{\n    \"all\": \"good\"\n}"
         }
       }
+    },
+    "eb66500e-ccc1-4516-8642-1af83926218e" : {
+      "vertexId" : "eb66500e-ccc1-4516-8642-1af83926218e",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{\n    \"lese\": true\n}",
+          "type" : "json"
+        }
+      }
     }
   },
   "statusHistory" : [ {
@@ -122,6 +175,11 @@
   }, {
     "commitId" : "38939e729efcf1f50e2a6ae8b958215cdafa150f",
     "timeStamp" : 1715615148245,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "6c3222424b5a3e8f72743c408516e7d7688afd73",
+    "timeStamp" : 1715615193756,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
