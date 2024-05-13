@@ -1,8 +1,9 @@
 {
+  "id" : "6641ee462bd84a7db7a64a32",
   "cts" : 1715596861283,
   "createdUserName" : "Vinay CN",
   "modifiedUserName" : "Vinay CN",
-  "mts" : 1715596861283,
+  "mts" : 1715597054031,
   "createdBy" : "65a8bb25f536760799fcd4fd",
   "modifiedBy" : "65a8bb25f536760799fcd4fd",
   "proxyId" : "6641ee3d2bd84a7db7a64a31",
@@ -18,32 +19,8 @@
   "locked" : true,
   "lockedBy" : "Vinay CN",
   "edgeSet" : [ {
-    "source" : "v2",
-    "target" : "v4"
-  }, {
-    "source" : "v2",
-    "target" : "v5"
-  }, {
-    "source" : "v4",
-    "target" : "v6"
-  }, {
     "source" : "v6",
     "target" : "v7"
-  }, {
-    "source" : "v1",
-    "target" : "v2"
-  }, {
-    "source" : "v3",
-    "target" : "v7"
-  }, {
-    "source" : "v5",
-    "target" : "v7"
-  }, {
-    "source" : "v7",
-    "target" : "v8"
-  }, {
-    "source" : "v1",
-    "target" : "v3"
   } ],
   "vertexHashMap" : {
     "v6" : {
@@ -456,6 +433,12 @@
     "cts" : 1715596861283,
     "lastModifiedBy" : "Vinay CN",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "168eb506d646f9d450e3f4e3096cfa45da8ae65a",
+    "timeStamp" : 1715596861283,
+    "modifiedBy" : "Vinay CN",
+    "totalNodes" : 8
   } ],
   "enableTracing" : false,
   "deployed" : false
