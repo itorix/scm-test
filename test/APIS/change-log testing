@@ -3,7 +3,7 @@
   "cts" : 1713271508019,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715537258940,
+  "mts" : 1715573113644,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "661e72d433ad746ee135f0be",
@@ -18,8 +18,11 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "1913eda7-cace-428e-8f02-caa05f32b604",
     "target" : "71ae74e8-0962-4a12-b640-e181d00e2af5"
+  }, {
+    "source" : "v1",
+    "target" : "1913eda7-cace-428e-8f02-caa05f32b604"
   } ],
   "vertexHashMap" : {
     "71ae74e8-0962-4a12-b640-e181d00e2af5" : {
@@ -38,6 +41,42 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ]
+    },
+    "1913eda7-cace-428e-8f02-caa05f32b604" : {
+      "vertexId" : "1913eda7-cace-428e-8f02-caa05f32b604",
+      "vertexType" : "ASSERTION",
+      "assertion" : {
+        "expression" : " ({0} && {1}) || ({2} && {3})",
+        "placeHolders" : [ {
+          "rule" : "PRESENT",
+          "key" : "jsessionid",
+          "value" : "1234",
+          "valueDataType" : "INTEGER"
+        }, {
+          "rule" : "PRESENT",
+          "key" : "xapikey",
+          "value" : "token123",
+          "valueDataType" : "STRING"
+        }, {
+          "rule" : "PRESENT",
+          "key" : "xapikey",
+          "value" : "token123",
+          "valueDataType" : "STRING"
+        }, {
+          "rule" : "PRESENT",
+          "key" : "jsessionid",
+          "value" : "1234",
+          "valueDataType" : "STRING"
+        } ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 500,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
     }
   },
   "statusHistory" : [ {
@@ -54,6 +93,11 @@
   }, {
     "commitId" : "d27498554dd7c75ca718fc0ef8a5a1846a7629d3",
     "timeStamp" : 1715514651646,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "0c7d06e364680a4022a0519b47b684042975bb27",
+    "timeStamp" : 1715537258940,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
