@@ -3,7 +3,7 @@
   "cts" : 1715596917367,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715601159685,
+  "mts" : 1715601312472,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6641ee757a35d5021ed4f690",
@@ -103,20 +103,10 @@
         "response" : {
           "statusCode" : 0,
           "variables" : [ {
-            "reference" : "body",
-            "value" : "Petstore",
-            "active" : false,
-            "hide" : false
-          }, {
-            "reference" : "body",
-            "value" : "Petstore",
-            "active" : false,
-            "hide" : false
-          }, {
             "name" : "$.",
             "reference" : "body",
             "value" : "Petstore",
-            "active" : false,
+            "active" : true,
             "hide" : true
           } ],
           "responseSchema" : "{\n  \"type\": \"array\",\n  \"items\": {\n    \"type\": \"object\"\n  }\n}"
@@ -192,6 +182,11 @@
   }, {
     "commitId" : "1ff788a23714fe1cfe5215592710fd53fbd8af6b",
     "timeStamp" : 1715599833404,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
+  }, {
+    "commitId" : "f4b369f7ffdedf5cba1d66c640359517d74ba951",
+    "timeStamp" : 1715601159685,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 5
   } ],
