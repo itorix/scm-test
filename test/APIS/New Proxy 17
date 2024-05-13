@@ -1,11 +1,12 @@
 {
-  "cts" : 1714290164628,
-  "createdUserName" : "vidya.wiz vidya.wiz",
-  "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1714290164628,
-  "createdBy" : "6454a1d660f0577244784ac0",
-  "modifiedBy" : "6454a1d660f0577244784ac0",
-  "proxyId" : "662dfdf408bf381357b54b9b",
+  "id" : "662b48ede292cf7e73604819",
+  "cts" : 1714112714309,
+  "createdUserName" : "Darshan Shivashankar",
+  "modifiedUserName" : "Darshan Shivashankar",
+  "mts" : 1715572492599,
+  "createdBy" : "60367d4038e56d398c70be6f",
+  "modifiedBy" : "60367d4038e56d398c70be6f",
+  "proxyId" : "662b48cae292cf7e73604818",
   "revision" : 1,
   "name" : "New Proxy 17",
   "apiType" : "RESTAPI",
@@ -13,20 +14,15 @@
   "path" : "",
   "pathArray" : [ ],
   "revisionStatus" : "DRAFT",
-  "locked" : false,
+  "locked" : true,
+  "lockedBy" : "Darshan Shivashankar",
   "edgeSet" : [ {
     "source" : "v1",
-    "target" : "e85740c0-aa8d-494a-8f9c-e2a16d32f5e6"
+    "target" : "71ae74e8-0962-4a12-b640-e181d00e2af5"
   } ],
   "vertexHashMap" : {
-    "v1" : {
-      "vertexId" : "v1",
-      "vertexType" : "START",
-      "name" : "Start",
-      "requestVariables" : [ ]
-    },
-    "e85740c0-aa8d-494a-8f9c-e2a16d32f5e6" : {
-      "vertexId" : "e85740c0-aa8d-494a-8f9c-e2a16d32f5e6",
+    "71ae74e8-0962-4a12-b640-e181d00e2af5" : {
+      "vertexId" : "71ae74e8-0962-4a12-b640-e181d00e2af5",
       "vertexType" : "STOP",
       "name" : "Stop",
       "proxyResponse" : {
@@ -35,13 +31,31 @@
           "type" : "JSON"
         }
       }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ]
     }
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1714290164628,
-    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "cts" : 1714112714309,
+    "lastModifiedBy" : "Darshan Shivashankar",
     "description" : "Created new proxy"
   } ],
+  "changeLogs" : [ {
+    "commitId" : "7c91f461ad3717a23793576245ad0cb0043cda49",
+    "timeStamp" : 1715568936332,
+    "modifiedBy" : "Darshan Shivashankar",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "1c8a06084abf5c4a89c380fd3ce7d7faf6844661",
+    "timeStamp" : 1715569279185,
+    "modifiedBy" : "Darshan Shivashankar",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
   "deployed" : false
 }
