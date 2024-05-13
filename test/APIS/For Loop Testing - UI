@@ -1,0 +1,56 @@
+{
+  "id" : "6641ee767a35d5021ed4f691",
+  "cts" : 1715596917367,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1715596943647,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "6641ee757a35d5021ed4f690",
+  "revision" : 1,
+  "name" : "For Loop Testing - UI",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "92e552d5-0312-428c-b36d-c75f0543270d"
+  } ],
+  "vertexHashMap" : {
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ]
+    },
+    "92e552d5-0312-428c-b36d-c75f0543270d" : {
+      "vertexId" : "92e552d5-0312-428c-b36d-c75f0543270d",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1715596917367,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "59ff2a05e66294020521c5c2f2eeb5a23fb8fbb0",
+    "timeStamp" : 1715596917367,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "deployed" : false
+}
