@@ -3,7 +3,7 @@
   "cts" : 1715596917367,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715601312472,
+  "mts" : 1715601347822,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6641ee757a35d5021ed4f690",
@@ -17,17 +17,17 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "3557e4b8-c14d-41be-a208-ad7aaa837bac",
-    "target" : "92e552d5-0312-428c-b36d-c75f0543270d"
-  }, {
-    "source" : "3557e4b8-c14d-41be-a208-ad7aaa837bac",
-    "target" : "f7f8bfd9-390f-490c-94c2-0d4ab54e4b62"
-  }, {
     "source" : "v1",
     "target" : "97602327-b8c7-473a-a906-b13f7a6eb275"
   }, {
     "source" : "97602327-b8c7-473a-a906-b13f7a6eb275",
     "target" : "3557e4b8-c14d-41be-a208-ad7aaa837bac"
+  }, {
+    "source" : "3557e4b8-c14d-41be-a208-ad7aaa837bac",
+    "target" : "92e552d5-0312-428c-b36d-c75f0543270d"
+  }, {
+    "source" : "3557e4b8-c14d-41be-a208-ad7aaa837bac",
+    "target" : "f7f8bfd9-390f-490c-94c2-0d4ab54e4b62"
   } ],
   "vertexHashMap" : {
     "f7f8bfd9-390f-490c-94c2-0d4ab54e4b62" : {
@@ -103,9 +103,9 @@
         "response" : {
           "statusCode" : 0,
           "variables" : [ {
-            "name" : "$.",
+            "name" : "Petstore",
             "reference" : "body",
-            "value" : "Petstore",
+            "value" : "$.",
             "active" : true,
             "hide" : true
           } ],
@@ -187,6 +187,11 @@
   }, {
     "commitId" : "f4b369f7ffdedf5cba1d66c640359517d74ba951",
     "timeStamp" : 1715601159685,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
+  }, {
+    "commitId" : "947b1cd5499dc1d42bc399137f98db5a3ffa174e",
+    "timeStamp" : 1715601312472,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 5
   } ],
