@@ -1,0 +1,193 @@
+{
+  "id" : "664224ad4129fb34ca6d77ac",
+  "cts" : 1715610795430,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1715617285043,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "664224ab4129fb34ca6d77ab",
+  "revision" : 1,
+  "name" : "If Condition Testing - UI",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "34054d76-574e-4beb-94d6-0fcda3f5c81b",
+    "target" : "34c0da5b-14ee-4725-9e9b-30530c768d98"
+  }, {
+    "source" : "34c0da5b-14ee-4725-9e9b-30530c768d98",
+    "target" : "365a94e5-0634-4cc5-ac2c-368903d948b3"
+  }, {
+    "source" : "34c0da5b-14ee-4725-9e9b-30530c768d98",
+    "target" : "eb66500e-ccc1-4516-8642-1af83926218e"
+  }, {
+    "source" : "34c0da5b-14ee-4725-9e9b-30530c768d98",
+    "target" : "cb4da8ff-fa0d-493d-94dc-c32c5a82ba54"
+  }, {
+    "source" : "v1",
+    "target" : "34054d76-574e-4beb-94d6-0fcda3f5c81b"
+  } ],
+  "vertexHashMap" : {
+    "cb4da8ff-fa0d-493d-94dc-c32c5a82ba54" : {
+      "vertexId" : "cb4da8ff-fa0d-493d-94dc-c32c5a82ba54",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "proxyResponse" : {
+        "statusCode" : 0
+      }
+    },
+    "34c0da5b-14ee-4725-9e9b-30530c768d98" : {
+      "vertexId" : "34c0da5b-14ee-4725-9e9b-30530c768d98",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "365a94e5-0634-4cc5-ac2c-368903d948b3" ]
+      }, {
+        "condition" : "else-if",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "cb4da8ff-fa0d-493d-94dc-c32c5a82ba54" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "eb66500e-ccc1-4516-8642-1af83926218e" ]
+      } ]
+    },
+    "34054d76-574e-4beb-94d6-0fcda3f5c81b" : {
+      "vertexId" : "34054d76-574e-4beb-94d6-0fcda3f5c81b",
+      "vertexType" : "TARGET",
+      "name" : "Dummy Json",
+      "target" : {
+        "name" : "Dummy Json",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "postman-echo.com",
+          "path" : "/get",
+          "headerParams" : [ {
+            "name" : "",
+            "value" : ""
+          } ],
+          "queryParams" : [ {
+            "name" : "",
+            "value" : ""
+          } ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "",
+            "reference" : "headers",
+            "value" : "",
+            "active" : false,
+            "source" : "headers",
+            "hide" : false
+          }, {
+            "name" : "justId",
+            "reference" : "body",
+            "value" : "$.id",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ]
+    },
+    "365a94e5-0634-4cc5-ac2c-368903d948b3" : {
+      "vertexId" : "365a94e5-0634-4cc5-ac2c-368903d948b3",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{\n    \"all\": \"good\"\n}"
+        }
+      }
+    },
+    "eb66500e-ccc1-4516-8642-1af83926218e" : {
+      "vertexId" : "eb66500e-ccc1-4516-8642-1af83926218e",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{\n    \"lese\": true\n}",
+          "type" : "json"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1715610795430,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "36fed1a62bfab58d777d6ab6af8100af40ffc282",
+    "timeStamp" : 1715610795430,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "06b703b37c5c03d86b57fced523eb952542a6324",
+    "timeStamp" : 1715611889132,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "7cbb5df0ff47e846cc73c389f589409bece3abb3",
+    "timeStamp" : 1715611999659,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "3be1d97d11211835ccda2c34c3e9145812d4e24a",
+    "timeStamp" : 1715614446150,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "38939e729efcf1f50e2a6ae8b958215cdafa150f",
+    "timeStamp" : 1715615148245,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "6c3222424b5a3e8f72743c408516e7d7688afd73",
+    "timeStamp" : 1715615193756,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "83563791b1fb64d83ae76c2c6e393e8a9e8c2f5b",
+    "timeStamp" : 1715616139547,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 6
+  } ],
+  "enableTracing" : false,
+  "deployed" : false
+}
