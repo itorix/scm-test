@@ -1,8 +1,9 @@
 {
+  "id" : "6640cd81a519a3132f36f70e",
   "cts" : 1715522943532,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715522943532,
+  "mts" : 1715565581647,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6640cd7fa519a3132f36f70d",
@@ -14,10 +15,14 @@
   "path" : "https://petstore.swagger.io/v2/pet/findByStatus",
   "pathArray" : [ "https:", "petstore.swagger.io", "v2", "pet", "findByStatus" ],
   "revisionStatus" : "DRAFT",
-  "locked" : false,
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "9756fa2f-c519-4961-82d5-f7db285f96ba",
     "target" : "6946b40f-26f6-4d1b-8a14-e8b97c596469"
+  }, {
+    "source" : "v1",
+    "target" : "9756fa2f-c519-4961-82d5-f7db285f96ba"
   }, {
     "source" : "6946b40f-26f6-4d1b-8a14-e8b97c596469",
     "target" : "b423da31-1f4a-4f43-8906-cafa36efe300"
@@ -95,6 +100,11 @@
         "source" : "query-params",
         "hide" : false
       } ]
+    },
+    "9756fa2f-c519-4961-82d5-f7db285f96ba" : {
+      "vertexId" : "9756fa2f-c519-4961-82d5-f7db285f96ba",
+      "vertexType" : "VARIABLES",
+      "runtimeVariableList" : [ ]
     }
   },
   "changeLogs" : [ {
@@ -145,6 +155,11 @@
   }, {
     "commitId" : "1868daf9789fedbbb76caf2b40658ec490069307",
     "timeStamp" : 1715521041741,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "88bb9c9c0767e795498ab64bac9a32129d462eb1",
+    "timeStamp" : 1715522943532,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
