@@ -1,11 +1,11 @@
 {
-  "cts" : 1715596570333,
+  "cts" : 1715596576292,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715596570333,
+  "mts" : 1715596576292,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
-  "proxyId" : "6641ed1a7a35d5021ed4f686",
+  "proxyId" : "6641ed207a35d5021ed4f688",
   "revision" : 1,
   "name" : "New Workflow 26",
   "apiType" : "RESTAPI",
@@ -17,17 +17,11 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
-    "target" : "cde8b702-b9d1-41c9-8225-895a42c255b7"
+    "target" : "ddd8b204-ffa1-47fa-9f86-7f1501593488"
   } ],
   "vertexHashMap" : {
-    "v1" : {
-      "vertexId" : "v1",
-      "vertexType" : "START",
-      "name" : "Start",
-      "requestVariables" : [ ]
-    },
-    "cde8b702-b9d1-41c9-8225-895a42c255b7" : {
-      "vertexId" : "cde8b702-b9d1-41c9-8225-895a42c255b7",
+    "ddd8b204-ffa1-47fa-9f86-7f1501593488" : {
+      "vertexId" : "ddd8b204-ffa1-47fa-9f86-7f1501593488",
       "vertexType" : "STOP",
       "name" : "Stop",
       "proxyResponse" : {
@@ -36,11 +30,17 @@
           "type" : "JSON"
         }
       }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ]
     }
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1715596570333,
+    "cts" : 1715596576292,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
   } ],
