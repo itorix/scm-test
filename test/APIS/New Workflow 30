@@ -3,7 +3,7 @@
   "cts" : 1715610795430,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715614446150,
+  "mts" : 1715615148245,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664224ab4129fb34ca6d77ab",
@@ -34,8 +34,8 @@
         "request" : {
           "apiMethod" : "GET",
           "scheme" : "https",
-          "host" : "dummyjson.com",
-          "path" : "/products/1",
+          "host" : "postman-echo.com",
+          "path" : "/get",
           "headerParams" : [ {
             "name" : "",
             "value" : ""
@@ -60,9 +60,9 @@
             "source" : "headers",
             "hide" : false
           }, {
-            "name" : "$.id",
+            "name" : "justId",
             "reference" : "body",
-            "value" : "justid",
+            "value" : "$.id",
             "active" : true,
             "source" : "raw",
             "hide" : false
@@ -113,6 +113,11 @@
   }, {
     "commitId" : "7cbb5df0ff47e846cc73c389f589409bece3abb3",
     "timeStamp" : 1715611999659,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "3be1d97d11211835ccda2c34c3e9145812d4e24a",
+    "timeStamp" : 1715614446150,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
