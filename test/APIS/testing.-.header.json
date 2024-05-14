@@ -1,0 +1,446 @@
+{
+  "id" : "662a264a5e9450118ce43cd5",
+  "cts" : 1714038346702,
+  "createdUserName" : "Vinay CN",
+  "modifiedUserName" : "Vinay CN",
+  "mts" : 1715665734766,
+  "createdBy" : "65a8bb25f536760799fcd4fd",
+  "modifiedBy" : "65a8bb25f536760799fcd4fd",
+  "proxyId" : "662a264a5e9450118ce43cd4",
+  "revision" : 1,
+  "name" : "testing.-.header",
+  "description" : "restingf operations",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/executor/rest/soap",
+  "pathArray" : [ "executor", "rest", "soap" ],
+  "environmentId" : "65aa1e5c2c3c9e6f117c09c3",
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Vinay CN",
+  "edgeSet" : [ {
+    "source" : "v6",
+    "target" : "v7"
+  } ],
+  "vertexHashMap" : {
+    "v6" : {
+      "vertexId" : "v6",
+      "vertexType" : "TARGET",
+      "name" : "Swagger target",
+      "target" : {
+        "name" : "Swagger request",
+        "description" : "this a Swagger request",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "gcp-api.apiwiz.io",
+          "path" : "/itorix/v2/swaggers/history",
+          "headerParams" : [ {
+            "name" : "jsessionid",
+            "description" : "Apikey",
+            "value" : "{{responseJsessionId}}"
+          }, {
+            "name" : "Content-Type",
+            "description" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ {
+            "name" : "offset",
+            "description" : "offset",
+            "value" : "1"
+          }, {
+            "name" : "pageSize",
+            "description" : "pageSize",
+            "value" : "10"
+          }, {
+            "name" : "sortbymodifieddate",
+            "description" : "sortbymodifieddate",
+            "value" : "desc"
+          } ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "swaggerTotal",
+            "reference" : "body",
+            "value" : "pagination.total",
+            "active" : false,
+            "hide" : false
+          }, {
+            "name" : "randomSwaggerName",
+            "reference" : "body",
+            "value" : "data.[0].name",
+            "active" : false,
+            "hide" : false
+          } ]
+        },
+        "responseAssertion" : {
+          "expression" : "{0}",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "response.statusCode",
+            "value" : "200",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : true,
+          "errorResponse" : {
+            "statusCode" : 401,
+            "headers" : {
+              "x-agent-error" : "apibuiler",
+              "time" : "1708526031456",
+              "Content-Type" : "application/json"
+            },
+            "body" : {
+              "data" : "{\"error\":\"Swagger assertion Failed\"}",
+              "type" : "json"
+            }
+          }
+        },
+        "timeout" : 0,
+        "continueOnError" : false
+      }
+    },
+    "v7" : {
+      "vertexId" : "v7",
+      "vertexType" : "TARGET",
+      "name" : "XML target",
+      "target" : {
+        "name" : "XML request",
+        "description" : "this a XML request",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "api.nbp.pl",
+          "path" : "/api/exchangerates/tables/A",
+          "headerParams" : [ {
+            "name" : "Accept",
+            "description" : "Accept",
+            "value" : "application/xml"
+          } ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "xmlTesting",
+            "reference" : "body",
+            "value" : "/ArrayOfExchangeRatesTable/ExchangeRatesTable/Table",
+            "active" : false,
+            "hide" : false
+          }, {
+            "name" : "xmlObject",
+            "reference" : "body",
+            "value" : "/ArrayOfExchangeRatesTable/ExchangeRatesTable",
+            "active" : false,
+            "hide" : false
+          } ]
+        },
+        "responseAssertion" : {
+          "expression" : "{0}",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "response.statusCode",
+            "value" : "200",
+            "valueDataType" : "STRING"
+          }, {
+            "rule" : "PRESENT",
+            "key" : "/ArrayOfExchangeRatesTable/ExchangeRatesTable/No",
+            "value" : "200",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 401,
+            "headers" : {
+              "x-agent-error" : "apibuiler",
+              "time" : "1708526031456",
+              "Content-Type" : "application/json"
+            },
+            "body" : {
+              "data" : "{\"error\":\"XML assertion Failed\"}",
+              "type" : "json"
+            }
+          }
+        },
+        "timeout" : 0,
+        "continueOnError" : false
+      }
+    },
+    "v8" : {
+      "vertexId" : "v8",
+      "vertexType" : "STOP",
+      "name" : "response",
+      "proxyResponse" : {
+        "statusCode" : 202,
+        "headers" : {
+          "x-jsessionId" : "{{jsessionId}}",
+          "time" : "1708526031457",
+          "x-agent" : "apibuiler",
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"login target\": {\n        \"responseJsessionId\": \"65cf471ed4268141df744229\"\n    },\n    \"requestJsessionId\": \"6571c41f8e1393534cb16754\",\n    \"swaggerTarget\": {\n        \"2.0\": {\n            \"total\": \"222\"\n        }\n    },\n    \"randomSwaggerName\": \"1.Online Banking API\",\n    \"Pet name\" : \"{{petName}}\",\n \"pet data json\" : {{{petData}}} \n}",
+          "type" : "json"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "proxy",
+      "requestVariables" : [ {
+        "name" : "requestJsessionId",
+        "reference" : "headers",
+        "value" : "jsessionid",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "requestqueryParamName",
+        "reference" : "query-params",
+        "value" : "name",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "requestbodyUsername",
+        "reference" : "body",
+        "value" : "id",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "status",
+        "reference" : "query-params",
+        "value" : "status",
+        "active" : false,
+        "hide" : false
+      } ]
+    },
+    "v2" : {
+      "vertexId" : "v2",
+      "vertexType" : "ASSERTION",
+      "name" : "assertion",
+      "assertion" : {
+        "expression" : "{0} && {1} && {2} && {3}",
+        "placeHolders" : [ {
+          "rule" : "PRESENT",
+          "key" : "request.requestHeaders.jsessionid",
+          "valueDataType" : "STRING"
+        }, {
+          "rule" : "PRESENT",
+          "key" : "request.requestBody.id",
+          "valueDataType" : "STRING"
+        }, {
+          "rule" : "PRESENT",
+          "key" : "request.requestQueryParams.name",
+          "valueDataType" : "STRING"
+        }, {
+          "rule" : "GREATER_THAN",
+          "key" : "request.requestQueryParams.number",
+          "value" : "5",
+          "valueDataType" : "INTEGER"
+        } ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 501,
+          "headers" : {
+            "x-agent-error" : "apibuiler",
+            "time" : "1708526031456",
+            "Content-Type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\"error\":\"assertionFailed\"}",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "v3" : {
+      "vertexId" : "v3",
+      "vertexType" : "TARGET",
+      "name" : "Pet store target",
+      "target" : {
+        "name" : "petstore request",
+        "description" : "this a petstore request",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "dev-api.apiwiz.io",
+          "path" : "/v2/pet/findByStatus",
+          "queryParams" : [ {
+            "name" : "status",
+            "description" : "offset",
+            "value" : "{{status}}"
+          } ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "petName",
+            "reference" : "body",
+            "value" : "[0].name",
+            "active" : false,
+            "hide" : false
+          }, {
+            "name" : "petData",
+            "reference" : "body",
+            "value" : "[0]",
+            "active" : false,
+            "hide" : false
+          } ]
+        },
+        "responseAssertion" : {
+          "expression" : "{0}",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "response.statusCode",
+            "value" : "200",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 401,
+            "headers" : {
+              "x-agent-error" : "apibuiler",
+              "time" : "1708526031456",
+              "Content-Type" : "application/json"
+            },
+            "body" : {
+              "data" : "{\"error\":\"Petstore assertion Failed\"}",
+              "type" : "json"
+            }
+          }
+        },
+        "timeout" : 0,
+        "continueOnError" : false
+      }
+    },
+    "v4" : {
+      "vertexId" : "v4",
+      "vertexType" : "TARGET",
+      "name" : "login target",
+      "target" : {
+        "name" : "login request",
+        "description" : "this a login call to capture jsessionid",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "gcp-api.apiwiz.io",
+          "path" : "/itorix/v1/users/login",
+          "headerParams" : [ {
+            "name" : "X-Apikey",
+            "description" : "Apikey",
+            "value" : "XeX0u28Ya1a3CBm5tihMQFteeA6fZTy8avUIsJ0WnNOaEAM90Hcv9G2xo5z5hI4WMyHffxTAbP2LcXK4u6n5Pw=="
+          }, {
+            "name" : "Content-Type",
+            "description" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "body" : {
+            "data" : "{\n    \"loginId\": \"akash.k\",\n    \"password\": \"KFZtQ6UjPd2/h0UQSwimh0UdGbxpaaiY3owilJ8yienztO0F8jlmNlFEpx7krAEPlrp/logQ3UQ0tl7NuveT4g==\",\n    \"workspaceId\": \"acme-team-gcp-dev\"\n}",
+            "type" : "json"
+          }
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "responseJsessionId",
+            "reference" : "body",
+            "value" : "id",
+            "active" : false,
+            "hide" : false
+          } ]
+        },
+        "responseAssertion" : {
+          "expression" : "{0}",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "response.statusCode",
+            "value" : "200",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : true,
+          "errorResponse" : {
+            "statusCode" : 401,
+            "headers" : {
+              "x-agent-error" : "apibuiler",
+              "time" : "1708526031456",
+              "Content-Type" : "application/json"
+            },
+            "body" : {
+              "data" : "{\"error\":\"login assertion Failed\"}",
+              "type" : "json"
+            }
+          }
+        },
+        "timeout" : 0,
+        "continueOnError" : false
+      }
+    },
+    "v5" : {
+      "vertexId" : "v5",
+      "vertexType" : "TARGET",
+      "name" : "menu target",
+      "target" : {
+        "name" : "Menu request",
+        "description" : "this a Menu endpoint",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "gcp-api.apiwiz.io",
+          "path" : "/itorix/v1/app/menu",
+          "headerParams" : [ {
+            "name" : "jsessionid",
+            "description" : "Apikey",
+            "value" : "{{responseJsessionId}}"
+          }, {
+            "name" : "Content-Type",
+            "description" : "Content-Type",
+            "value" : "application/json"
+          } ]
+        },
+        "responseAssertion" : {
+          "expression" : "{0}",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "response.statusCode",
+            "value" : "200",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : true,
+          "errorResponse" : {
+            "statusCode" : 401,
+            "headers" : {
+              "x-agent-error" : "apibuiler",
+              "time" : "1708526031456",
+              "Content-Type" : "application/json"
+            },
+            "body" : {
+              "data" : "{\"error\":\"Menu assertion Failed\"}",
+              "type" : "json"
+            }
+          }
+        },
+        "timeout" : 0,
+        "continueOnError" : false
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1714038346702,
+    "lastModifiedBy" : "Vinay CN",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "2f965393f135d649bf2bb7bb0e3d1d5f64c1a2e5",
+    "timeStamp" : 1715665654671,
+    "modifiedBy" : "Vinay CN",
+    "totalNodes" : 8
+  } ],
+  "virtualHostList" : [ ],
+  "enableTracing" : false,
+  "deployed" : false
+}
