@@ -3,7 +3,7 @@
   "cts" : 1715610795430,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715656331416,
+  "mts" : 1715656345032,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664224ab4129fb34ca6d77ab",
@@ -21,19 +21,22 @@
     "target" : "365a94e5-0634-4cc5-ac2c-368903d948b3"
   }, {
     "source" : "34c0da5b-14ee-4725-9e9b-30530c768d98",
-    "target" : "cb4da8ff-fa0d-493d-94dc-c32c5a82ba54"
+    "target" : "e57bdc76-ae5e-41ec-b33e-0c6d061c95cc"
   }, {
     "source" : "34c0da5b-14ee-4725-9e9b-30530c768d98",
-    "target" : "e57bdc76-ae5e-41ec-b33e-0c6d061c95cc"
+    "target" : "c39b23f8-e0cf-4a73-bbdb-4b872824ec4f"
   }, {
     "source" : "v1",
     "target" : "34054d76-574e-4beb-94d6-0fcda3f5c81b"
   }, {
-    "source" : "34c0da5b-14ee-4725-9e9b-30530c768d98",
-    "target" : "eb66500e-ccc1-4516-8642-1af83926218e"
-  }, {
     "source" : "34054d76-574e-4beb-94d6-0fcda3f5c81b",
     "target" : "34c0da5b-14ee-4725-9e9b-30530c768d98"
+  }, {
+    "source" : "c39b23f8-e0cf-4a73-bbdb-4b872824ec4f",
+    "target" : "eb66500e-ccc1-4516-8642-1af83926218e"
+  }, {
+    "source" : "34c0da5b-14ee-4725-9e9b-30530c768d98",
+    "target" : "cb4da8ff-fa0d-493d-94dc-c32c5a82ba54"
   } ],
   "vertexHashMap" : {
     "cb4da8ff-fa0d-493d-94dc-c32c5a82ba54" : {
@@ -79,7 +82,7 @@
         "assertion" : {
           "continueOnError" : false
         },
-        "flowVertexes" : [ "eb66500e-ccc1-4516-8642-1af83926218e" ]
+        "flowVertexes" : [ "c39b23f8-e0cf-4a73-bbdb-4b872824ec4f" ]
       } ]
     },
     "34054d76-574e-4beb-94d6-0fcda3f5c81b" : {
@@ -130,6 +133,28 @@
         "continueOnError" : false,
         "errorResponse" : {
           "statusCode" : 0
+        }
+      }
+    },
+    "c39b23f8-e0cf-4a73-bbdb-4b872824ec4f" : {
+      "vertexId" : "c39b23f8-e0cf-4a73-bbdb-4b872824ec4f",
+      "vertexType" : "ASSERTION",
+      "name" : "Assertion",
+      "assertion" : {
+        "expression" : " ({0})",
+        "placeHolders" : [ {
+          "rule" : "PRESENT",
+          "key" : "justId",
+          "value" : "$.id",
+          "valueDataType" : "STRING"
+        } ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 500,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
         }
       }
     },
@@ -236,6 +261,11 @@
     "timeStamp" : 1715656288705,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 6
+  }, {
+    "commitId" : "17958ca993da409a8e3498334eb149eb9a724317",
+    "timeStamp" : 1715656331416,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 7
   } ],
   "enableTracing" : false,
   "deployed" : false
