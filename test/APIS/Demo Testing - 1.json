@@ -3,7 +3,7 @@
   "cts" : 1715669101451,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715669802140,
+  "mts" : 1715669843848,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6643086dbaf2653e0d3ef792",
@@ -20,11 +20,11 @@
     "source" : "99bfd90a-4230-43d7-b147-824306326c9d",
     "target" : "e7e84b7b-fb7b-449b-8fab-cdaddbcd1684"
   }, {
-    "source" : "v1",
-    "target" : "85ced650-6b9b-4f99-b6fa-e51c075305c9"
-  }, {
     "source" : "85ced650-6b9b-4f99-b6fa-e51c075305c9",
     "target" : "99bfd90a-4230-43d7-b147-824306326c9d"
+  }, {
+    "source" : "v1",
+    "target" : "85ced650-6b9b-4f99-b6fa-e51c075305c9"
   } ],
   "vertexHashMap" : {
     "85ced650-6b9b-4f99-b6fa-e51c075305c9" : {
@@ -77,15 +77,15 @@
     "99bfd90a-4230-43d7-b147-824306326c9d" : {
       "vertexId" : "99bfd90a-4230-43d7-b147-824306326c9d",
       "vertexType" : "TARGET",
-      "name" : "test",
+      "name" : "Get OAS",
       "target" : {
-        "name" : "test",
+        "name" : "Get OAS",
         "apiType" : "RESTAPI",
         "request" : {
           "apiMethod" : "GET",
           "scheme" : "https",
-          "host" : "test",
-          "path" : "asdf",
+          "host" : "dev-api.apiwiz.io",
+          "path" : "/itorix/v2/swaggers/history",
           "headerParams" : [ {
             "name" : "jsessionId",
             "value" : "{{sessionId}}"
@@ -148,6 +148,11 @@
   }, {
     "commitId" : "509cdefc2942a1f3d7daae5de99dfc06c4c74e7a",
     "timeStamp" : 1715669759360,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "3f38252411dd735f60389898d3cc75349d7fa46d",
+    "timeStamp" : 1715669802140,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
   } ],
