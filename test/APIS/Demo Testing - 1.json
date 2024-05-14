@@ -3,7 +3,7 @@
   "cts" : 1715669101451,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715670250440,
+  "mts" : 1715670350455,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6643086dbaf2653e0d3ef792",
@@ -21,16 +21,19 @@
     "target" : "2d731a98-30d8-4fe9-9e4f-c27a10bb9ed9"
   }, {
     "source" : "85ced650-6b9b-4f99-b6fa-e51c075305c9",
-    "target" : "99bfd90a-4230-43d7-b147-824306326c9d"
-  }, {
-    "source" : "v1",
-    "target" : "85ced650-6b9b-4f99-b6fa-e51c075305c9"
+    "target" : "c53818e7-5ad0-458e-b7f7-9ddc99bd4882"
   }, {
     "source" : "99bfd90a-4230-43d7-b147-824306326c9d",
     "target" : "da9525ad-d23d-4533-8421-7b895a25908c"
   }, {
+    "source" : "v1",
+    "target" : "85ced650-6b9b-4f99-b6fa-e51c075305c9"
+  }, {
     "source" : "da9525ad-d23d-4533-8421-7b895a25908c",
     "target" : "e7e84b7b-fb7b-449b-8fab-cdaddbcd1684"
+  }, {
+    "source" : "85ced650-6b9b-4f99-b6fa-e51c075305c9",
+    "target" : "99bfd90a-4230-43d7-b147-824306326c9d"
   } ],
   "vertexHashMap" : {
     "85ced650-6b9b-4f99-b6fa-e51c075305c9" : {
@@ -61,7 +64,8 @@
         "condition" : "else-if",
         "assertion" : {
           "continueOnError" : false
-        }
+        },
+        "flowVertexes" : [ "c53818e7-5ad0-458e-b7f7-9ddc99bd4882" ]
       }, {
         "condition" : "else",
         "assertion" : {
@@ -74,9 +78,10 @@
       "vertexType" : "STOP",
       "name" : "Stop",
       "proxyResponse" : {
-        "statusCode" : 0,
+        "statusCode" : 200,
         "body" : {
-          "type" : "JSON"
+          "data" : "{\n    \"sessionId\": {{sessionId}}\n}",
+          "type" : "json"
         }
       }
     },
@@ -125,6 +130,17 @@
         "continueOnError" : false,
         "errorResponse" : {
           "statusCode" : 0
+        }
+      }
+    },
+    "c53818e7-5ad0-458e-b7f7-9ddc99bd4882" : {
+      "vertexId" : "c53818e7-5ad0-458e-b7f7-9ddc99bd4882",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
         }
       }
     },
@@ -235,6 +251,11 @@
     "timeStamp" : 1715670151653,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 5
+  }, {
+    "commitId" : "068c12b32fcd5deb7e958fdc4633ade15506bdd7",
+    "timeStamp" : 1715670250440,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 6
   } ],
   "enableTracing" : false,
   "deployed" : false
