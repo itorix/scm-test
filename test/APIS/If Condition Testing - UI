@@ -3,7 +3,7 @@
   "cts" : 1715610795430,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715617285043,
+  "mts" : 1715656288705,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664224ab4129fb34ca6d77ab",
@@ -17,6 +17,9 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "34054d76-574e-4beb-94d6-0fcda3f5c81b"
+  }, {
     "source" : "34054d76-574e-4beb-94d6-0fcda3f5c81b",
     "target" : "34c0da5b-14ee-4725-9e9b-30530c768d98"
   }, {
@@ -28,9 +31,6 @@
   }, {
     "source" : "34c0da5b-14ee-4725-9e9b-30530c768d98",
     "target" : "cb4da8ff-fa0d-493d-94dc-c32c5a82ba54"
-  }, {
-    "source" : "v1",
-    "target" : "34054d76-574e-4beb-94d6-0fcda3f5c81b"
   } ],
   "vertexHashMap" : {
     "cb4da8ff-fa0d-493d-94dc-c32c5a82ba54" : {
@@ -48,7 +48,21 @@
       "conditionalFlow" : [ {
         "condition" : "if",
         "assertion" : {
-          "continueOnError" : false
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "PRESENT",
+            "key" : "justId",
+            "value" : "$.id",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
         },
         "flowVertexes" : [ "365a94e5-0634-4cc5-ac2c-368903d948b3" ]
       }, {
@@ -185,6 +199,11 @@
   }, {
     "commitId" : "83563791b1fb64d83ae76c2c6e393e8a9e8c2f5b",
     "timeStamp" : 1715616139547,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 6
+  }, {
+    "commitId" : "eaba9d264b0c06b0ac5158a8bdd4d653950cd153",
+    "timeStamp" : 1715617285043,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 6
   } ],
