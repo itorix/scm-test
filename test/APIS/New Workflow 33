@@ -3,7 +3,7 @@
   "cts" : 1715661292116,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715662915141,
+  "mts" : 1715662925537,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6642e9ec46e2446eafc64061",
@@ -17,19 +17,19 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
-    "target" : "7173bbf9-42cf-494d-8461-6cb9cc0128a4"
-  }, {
     "source" : "7173bbf9-42cf-494d-8461-6cb9cc0128a4",
     "target" : "0b78c449-3df8-4017-a38d-b75c65e92a70"
+  }, {
+    "source" : "v1",
+    "target" : "7173bbf9-42cf-494d-8461-6cb9cc0128a4"
   } ],
   "vertexHashMap" : {
     "7173bbf9-42cf-494d-8461-6cb9cc0128a4" : {
       "vertexId" : "7173bbf9-42cf-494d-8461-6cb9cc0128a4",
       "vertexType" : "TARGET",
-      "name" : "Graphql{\"query\":\"query ExampleQuery {\\n  company {\\n    ceo\\n  }\\n  roadster {\\n    apoapsis_au\\n  }\\n}\\n\",\"variables\":{}}",
+      "name" : "graphql",
       "target" : {
-        "name" : "Graphql{\"query\":\"query ExampleQuery {\\n  company {\\n    ceo\\n  }\\n  roadster {\\n    apoapsis_au\\n  }\\n}\\n\",\"variables\":{}}",
+        "name" : "graphql",
         "apiType" : "GRAPHQL",
         "request" : {
           "apiMethod" : "POST",
@@ -105,6 +105,11 @@
     "timeStamp" : 1715661292116,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "1eb3f64505bc4a5e2235a84d99536f02336ad4cc",
+    "timeStamp" : 1715662915141,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "deployed" : false
