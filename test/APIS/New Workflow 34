@@ -3,7 +3,7 @@
   "cts" : 1715667616949,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715667755543,
+  "mts" : 1715667817841,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664302a0baf2653e0d3ef78e",
@@ -17,11 +17,11 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
-    "target" : "c6e1a406-d6f2-4fe8-b39e-dab529b9d772"
-  }, {
     "source" : "c6e1a406-d6f2-4fe8-b39e-dab529b9d772",
     "target" : "8b7676dc-8f1b-4c2d-8297-57d026d8235a"
+  }, {
+    "source" : "v1",
+    "target" : "c6e1a406-d6f2-4fe8-b39e-dab529b9d772"
   } ],
   "vertexHashMap" : {
     "c6e1a406-d6f2-4fe8-b39e-dab529b9d772" : {
@@ -29,8 +29,13 @@
       "vertexType" : "ASSERTION",
       "name" : "Assertion",
       "assertion" : {
-        "expression" : "",
-        "placeHolders" : [ ],
+        "expression" : " ({0})",
+        "placeHolders" : [ {
+          "rule" : "PRESENT",
+          "key" : "variables.sessionId",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
         "continueOnError" : false,
         "errorResponse" : {
           "statusCode" : 500,
@@ -77,6 +82,11 @@
     "timeStamp" : 1715667616949,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "055060dc36b080bd2b9f91411cd5b184423474f9",
+    "timeStamp" : 1715667755543,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "deployed" : false
