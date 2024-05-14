@@ -1,8 +1,9 @@
 {
+  "id" : "664302a2baf2653e0d3ef78f",
   "cts" : 1715667616949,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715667616949,
+  "mts" : 1715667755543,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664302a0baf2653e0d3ef78e",
@@ -17,9 +18,29 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "c6e1a406-d6f2-4fe8-b39e-dab529b9d772"
+  }, {
+    "source" : "c6e1a406-d6f2-4fe8-b39e-dab529b9d772",
     "target" : "8b7676dc-8f1b-4c2d-8297-57d026d8235a"
   } ],
   "vertexHashMap" : {
+    "c6e1a406-d6f2-4fe8-b39e-dab529b9d772" : {
+      "vertexId" : "c6e1a406-d6f2-4fe8-b39e-dab529b9d772",
+      "vertexType" : "ASSERTION",
+      "name" : "Assertion",
+      "assertion" : {
+        "expression" : "",
+        "placeHolders" : [ ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 500,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    },
     "8b7676dc-8f1b-4c2d-8297-57d026d8235a" : {
       "vertexId" : "8b7676dc-8f1b-4c2d-8297-57d026d8235a",
       "vertexType" : "STOP",
@@ -35,7 +56,14 @@
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
-      "requestVariables" : [ ]
+      "requestVariables" : [ {
+        "name" : "sessionId",
+        "reference" : "headers",
+        "value" : "sessionId",
+        "active" : false,
+        "source" : "headers",
+        "hide" : false
+      } ]
     }
   },
   "statusHistory" : [ {
@@ -43,6 +71,12 @@
     "cts" : 1715667616949,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "375666968b776f08a9c2ba276150d719f8d0015b",
+    "timeStamp" : 1715667616949,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "deployed" : false
