@@ -3,7 +3,7 @@
   "cts" : 1715647230539,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715648698519,
+  "mts" : 1715648868039,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6642b2fe46e2446eafc6405d",
@@ -18,9 +18,63 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "15f28b71-351a-4246-a83f-94a839c26a49"
+  }, {
+    "source" : "15f28b71-351a-4246-a83f-94a839c26a49",
     "target" : "925e9cac-5034-4aa7-9199-a2022865e5c5"
   } ],
   "vertexHashMap" : {
+    "15f28b71-351a-4246-a83f-94a839c26a49" : {
+      "vertexId" : "15f28b71-351a-4246-a83f-94a839c26a49",
+      "vertexType" : "TARGET",
+      "name" : "Mock Endpoint",
+      "target" : {
+        "name" : "Mock Endpoint",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "postman-echo.com",
+          "path" : "/get",
+          "headerParams" : [ {
+            "name" : "",
+            "value" : ""
+          } ],
+          "queryParams" : [ {
+            "name" : "",
+            "value" : ""
+          } ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "",
+            "reference" : "headers",
+            "value" : "",
+            "active" : false,
+            "source" : "headers",
+            "hide" : false
+          }, {
+            "name" : "hostName",
+            "reference" : "body",
+            "value" : "$.headers.host",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0
+        }
+      }
+    },
     "925e9cac-5034-4aa7-9199-a2022865e5c5" : {
       "vertexId" : "925e9cac-5034-4aa7-9199-a2022865e5c5",
       "vertexType" : "STOP",
@@ -63,6 +117,11 @@
   }, {
     "commitId" : "05fbc6d67d3db946771ceb84b26f8d77c75d8b0b",
     "timeStamp" : 1715648293348,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "4ddff6e863628fdfaad327b92a991cea8b0c5046",
+    "timeStamp" : 1715648698519,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
