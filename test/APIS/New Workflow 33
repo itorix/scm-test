@@ -3,7 +3,7 @@
   "cts" : 1715661292116,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715665365585,
+  "mts" : 1715665764540,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6642e9ec46e2446eafc64061",
@@ -22,6 +22,9 @@
   }, {
     "source" : "7173bbf9-42cf-494d-8461-6cb9cc0128a4",
     "target" : "0b78c449-3df8-4017-a38d-b75c65e92a70"
+  }, {
+    "source" : "v1",
+    "target" : "c5403675-f6c9-4ffb-bdae-d1450ea5375c"
   } ],
   "vertexHashMap" : {
     "7173bbf9-42cf-494d-8461-6cb9cc0128a4" : {
@@ -69,6 +72,45 @@
             "value" : "$.data.company.ceo",
             "active" : true,
             "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0
+        }
+      }
+    },
+    "c5403675-f6c9-4ffb-bdae-d1450ea5375c" : {
+      "vertexId" : "c5403675-f6c9-4ffb-bdae-d1450ea5375c",
+      "vertexType" : "TARGET",
+      "name" : "SoapTarget",
+      "target" : {
+        "name" : "SoapTarget",
+        "apiType" : "SOAP",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "webservices.oorsprong.org",
+          "path" : "/websamples.countryinfo/CountryInfoService.wso",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:web=\"http://www.oorsprong.org/websamples.countryinfo\">\n   <soapenv:Header/>\n   <soapenv:Body>\n      <web:CapitalCity>\n         <web:sCountryISOCode>IND</web:sCountryISOCode>\n      </web:CapitalCity>\n   </soapenv:Body>\n</soapenv:Envelope>",
+            "type" : "xml"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "",
+            "reference" : "headers",
+            "value" : "",
+            "active" : false,
+            "source" : "headers",
             "hide" : false
           } ]
         },
@@ -134,6 +176,11 @@
   }, {
     "commitId" : "dcfdc59c9d3d5682b105fdb4924dc2e320044ea5",
     "timeStamp" : 1715663254757,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "43f6d885fd5cf962f46e6d4255ac2ea0ab621f01",
+    "timeStamp" : 1715665365585,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
