@@ -3,7 +3,7 @@
   "cts" : 1715647230539,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715659519402,
+  "mts" : 1715660409844,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6642b2fe46e2446eafc6405d",
@@ -20,23 +20,23 @@
     "source" : "d2c7e52d-a277-4970-89f8-6f7f672e89f5",
     "target" : "14af1e87-edc8-48f1-b87d-dce5008e1b1e"
   }, {
-    "source" : "v1",
-    "target" : "12d0dc8f-bc60-4340-bf0e-ba2e0063ac63"
+    "source" : "12d0dc8f-bc60-4340-bf0e-ba2e0063ac63",
+    "target" : "15f28b71-351a-4246-a83f-94a839c26a49"
   }, {
     "source" : "15f28b71-351a-4246-a83f-94a839c26a49",
+    "target" : "43078471-f6b4-432b-869d-7cdfe3147ea4"
+  }, {
+    "source" : "43078471-f6b4-432b-869d-7cdfe3147ea4",
+    "target" : "925e9cac-5034-4aa7-9199-a2022865e5c5"
+  }, {
+    "source" : "14af1e87-edc8-48f1-b87d-dce5008e1b1e",
     "target" : "43078471-f6b4-432b-869d-7cdfe3147ea4"
   }, {
     "source" : "v1",
     "target" : "d2c7e52d-a277-4970-89f8-6f7f672e89f5"
   }, {
-    "source" : "14af1e87-edc8-48f1-b87d-dce5008e1b1e",
-    "target" : "43078471-f6b4-432b-869d-7cdfe3147ea4"
-  }, {
-    "source" : "12d0dc8f-bc60-4340-bf0e-ba2e0063ac63",
-    "target" : "15f28b71-351a-4246-a83f-94a839c26a49"
-  }, {
-    "source" : "43078471-f6b4-432b-869d-7cdfe3147ea4",
-    "target" : "925e9cac-5034-4aa7-9199-a2022865e5c5"
+    "source" : "v1",
+    "target" : "12d0dc8f-bc60-4340-bf0e-ba2e0063ac63"
   } ],
   "vertexHashMap" : {
     "43078471-f6b4-432b-869d-7cdfe3147ea4" : {
@@ -187,9 +187,9 @@
     "d2c7e52d-a277-4970-89f8-6f7f672e89f5" : {
       "vertexId" : "d2c7e52d-a277-4970-89f8-6f7f672e89f5",
       "vertexType" : "TARGET",
-      "name" : "LoopData",
+      "name" : "Loop Data",
       "target" : {
-        "name" : "LoopData",
+        "name" : "Loop Data",
         "apiType" : "RESTAPI",
         "request" : {
           "apiMethod" : "GET",
@@ -226,8 +226,14 @@
             "active" : true,
             "source" : "raw",
             "hide" : false
+          }, {
+            "name" : "LoopData",
+            "reference" : "body",
+            "value" : "$.products",
+            "active" : true,
+            "hide" : true
           } ],
-          "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"products\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\"\n      }\n    },\n    \"total\": {\n      \"type\": \"integer\"\n    },\n    \"skip\": {\n      \"type\": \"integer\"\n    },\n    \"limit\": {\n      \"type\": \"integer\"\n    }\n  }\n}"
+          "responseSchema" : "{\"$schema\":\"http://json-schema.org/draft-07/schema#\",\"title\":\"Generated schema for Root\",\"type\":\"object\",\"properties\":{\"products\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"number\"},\"title\":{\"type\":\"string\"},\"description\":{\"type\":\"string\"},\"price\":{\"type\":\"number\"},\"discountPercentage\":{\"type\":\"number\"},\"rating\":{\"type\":\"number\"},\"stock\":{\"type\":\"number\"},\"brand\":{\"type\":\"string\"},\"category\":{\"type\":\"string\"},\"thumbnail\":{\"type\":\"string\"},\"images\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}}},\"required\":[\"id\",\"title\",\"description\",\"price\",\"discountPercentage\",\"rating\",\"stock\",\"brand\",\"category\",\"thumbnail\",\"images\"]}},\"total\":{\"type\":\"number\"},\"skip\":{\"type\":\"number\"},\"limit\":{\"type\":\"number\"}},\"required\":[\"products\",\"total\",\"skip\",\"limit\"]}"
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -341,6 +347,11 @@
   }, {
     "commitId" : "bcffccc125e1f60660c6644ffb1c4e1ae527f86e",
     "timeStamp" : 1715659186866,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "265d01c9f7f1bf96b40e8cf118feaa22a6fdd4c7",
+    "timeStamp" : 1715659519402,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 8
   } ],
