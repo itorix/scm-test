@@ -3,7 +3,7 @@
   "cts" : 1715661292116,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715665764540,
+  "mts" : 1715665900942,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6642e9ec46e2446eafc64061",
@@ -17,14 +17,14 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
-    "target" : "7173bbf9-42cf-494d-8461-6cb9cc0128a4"
-  }, {
     "source" : "7173bbf9-42cf-494d-8461-6cb9cc0128a4",
     "target" : "0b78c449-3df8-4017-a38d-b75c65e92a70"
   }, {
     "source" : "v1",
     "target" : "c5403675-f6c9-4ffb-bdae-d1450ea5375c"
+  }, {
+    "source" : "v1",
+    "target" : "7173bbf9-42cf-494d-8461-6cb9cc0128a4"
   } ],
   "vertexHashMap" : {
     "7173bbf9-42cf-494d-8461-6cb9cc0128a4" : {
@@ -112,6 +112,13 @@
             "active" : false,
             "source" : "headers",
             "hide" : false
+          }, {
+            "name" : "extracted",
+            "reference" : "body",
+            "value" : "Envelope",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
           } ]
         },
         "timeout" : 0,
@@ -183,6 +190,11 @@
     "timeStamp" : 1715665365585,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "a91dcee5778fea93ef85f79f32449db0463d9be9",
+    "timeStamp" : 1715665764540,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
   } ],
   "enableTracing" : false,
   "deployed" : false
